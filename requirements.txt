@@ -1,19 +1,17 @@
-# Streamlit UI
+# UI
 streamlit>=1.33
 
-# Force headless OpenCV (no libGL needed) — keep this ABOVE ultralytics
-opencv-python-headless==4.10.0.84
-
-# YOLO
+# YOLO + Torch (3.12-compatible CPU wheels)
 ultralytics>=8.3.0
-
-# PyTorch CPU wheels compatible with Python 3.12
 torch==2.5.1
 torchvision==0.20.1
 
-# Utils
+# utils
 pillow
 numpy
 langchain>=0.2
 langchain-groq>=0.1.5
 python-dotenv>=1.0
+
+# IMPORTANT: install headless OpenCV LAST so it overwrites any cv2 already present
+opencv-python-headless==4.10.0.84
