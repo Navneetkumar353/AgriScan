@@ -1,8 +1,3 @@
-Perfect 👍 Here’s a **professional, detailed `README.md`** tailored for your **AgriScan** project — ready to upload directly to your GitHub repository.
-It’s complete with overview, setup, deployment, tech details, and roadmap.
-
----
-
 # 🌿 AgriScan — AI-Powered Crop Disease Detection & Remedy Recommendation
 
 **AgriScan** is an intelligent crop health monitoring system built to assist farmers and agronomists in detecting plant diseases using **deep learning** and recommending appropriate **fertilizers or treatments** through an integrated **language model (ChatGroq with LLaMA-3)**.  
@@ -219,5 +214,3 @@ These results are consistent across test samples of the PlantDoc dataset.
 This project is released under the **MIT License**.
 You’re free to use, modify, and distribute it for educational or research purposes.
 
-
-```
