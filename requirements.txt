@@ -1,17 +1,17 @@
-# Streamlit
+# Streamlit UI
 streamlit>=1.33
 
-# Avoid libGL errors on cloud
+# Force headless OpenCV (no libGL needed) — keep this ABOVE ultralytics
 opencv-python-headless==4.10.0.84
 
-# YOLO/Ultralytics
+# YOLO
 ultralytics>=8.3.0
 
-# PyTorch CPU wheels for Python 3.12
+# PyTorch CPU wheels compatible with Python 3.12
 torch==2.5.1
 torchvision==0.20.1
 
-# Utilities
+# Utils
 pillow
 numpy
 langchain>=0.2
