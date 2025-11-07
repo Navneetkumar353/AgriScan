@@ -11,7 +11,7 @@ It combines **YOLOv8 (Ultralytics)** for image classification and **LangChain + 
 
 | Feature | Description |
 |----------|-------------|
-| **Disease Detection** | Uses pretrained YOLOv8s classifier trained on the [PlantDoc Dataset](https://www.kaggle.com/datasets/abdulhasibuddin/plant-doc-dataset) |
+| **Disease Detection** | Uses pretrained YOLOv8s classifier trained on the [PlantDoc Dataset] |
 | **Remedy Suggestions** | Integrates **ChatGroq (LLaMA-3.3-70B)** through LangChain for fertilizer and pesticide recommendations |
 | **Web Interface** | Built using **Streamlit**, allowing simple drag-and-drop image uploads |
 | **Drone Concept** | Simulates drone-captured imagery for real-time monitoring (conceptual stage) |
@@ -56,7 +56,7 @@ AgriScan/
 
 ## 🧩 Dataset
 
-- **Dataset Name:** [PlantDoc Dataset](https://www.kaggle.com/datasets/pratikkayal/plantdoc-dataset)
+- **Dataset Name:** [PlantDoc Dataset](https://www.kaggle.com/datasets/abdulhasibuddin/plant-doc-dataset)
 - **Size:** ~938 MB (Approx.)
 - **Structure:**  
   - `train/` and `test/` directories  
