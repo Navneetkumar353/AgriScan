@@ -179,3 +179,22 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# --- AgriScan project additions ---
+
+# Keep secrets local
+.streamlit/secrets.toml
+
+# Don't upload the Kaggle dataset
+data/
+
+# Ignore all training outputs except the two small weights we ship
+runs/*
+!runs/classify/
+runs/classify/*
+!runs/classify/train/
+!runs/classify/train/weights/
+!runs/classify/train/weights/best.pt
+!runs/classify/train2/
+!runs/classify/train2/weights/
+!runs/classify/train2/weights/best.pt
