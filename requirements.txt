@@ -1,11 +1,19 @@
-ultralytics>=8.3.0
-opencv-python
-torch
-torchvision
+# Streamlit
 streamlit>=1.33
+
+# Use headless OpenCV to avoid libGL on cloud
+opencv-python-headless==4.10.0.84
+
+# Ultralytics (will use headless cv2 from above)
+ultralytics>=8.3.0
+
+# PyTorch CPU wheels compatible with Py3.11 on Streamlit Cloud
+torch==2.2.2
+torchvision==0.17.2
+
+# Others
 pillow
 numpy
-pandas
 langchain>=0.2
 langchain-groq>=0.1.5
 python-dotenv>=1.0
