@@ -1,17 +1,17 @@
 # UI
-streamlit
+streamlit>=1.33
 
-# YOLO + Torch (3.12-compatible CPU wheels)
-ultralytics
-torch
-torchvision
+# YOLO + Torch (stable compatibility ranges)
+ultralytics>=8.3.0
+torch>=2.0.0
+torchvision>=0.15.0
 
 # utils
-pillow
-numpy
-langchain
-langchain-groq
-python-dotenv
+pillow>=10.0.0
+numpy>=1.24.0,<2.5.0
+langchain>=0.2.0,<0.4.0
+langchain-groq>=0.1.5
+python-dotenv>=1.0.0
 
-# IMPORTANT: install headless OpenCV LAST so it overwrites any cv2 already present
-opencv-python-headless
+# Headless OpenCV to prevent GUI dependency issues
+opencv-python-headless>=4.8.0
