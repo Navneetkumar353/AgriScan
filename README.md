@@ -2,8 +2,25 @@
 
 **AgriScan** is an intelligent crop health monitoring system built to assist farmers and agronomists in detecting plant diseases using **deep learning** and recommending appropriate **fertilizers or treatments** through an integrated **language model (ChatGroq with LLaMA-3)**.  
 
-The system can classify diseases in **tomato, paddy, wheat**, and other Indian crops using drone or manual leaf images.  
-It combines **YOLOv8 (Ultralytics)** for image classification and **LangChain + ChatGroq** for generating natural-language treatment suggestions — all hosted in an interactive **Streamlit web app**.
+The system can classify diseases in **tomato, apple, corn, grape**, and many other crop types using leaf images. It combines **YOLOv8 (Ultralytics)** for image classification and **LangChain + ChatGroq** for generating natural-language treatment suggestions — all hosted in an interactive **Streamlit web app**.
+
+---
+
+## 📸 Working Demonstration
+
+Below are screenshots demonstrating **AgriScan** in action—classifying plant leaf health and automatically drafting treatment plans:
+
+### 1. Healthy Leaf Classification
+The system successfully identifies healthy leaves with high confidence, showing a clean, green card:
+![Healthy Apple Leaf Detection](assets/working_healthy.png)
+
+### 2. Apple Rust Disease Detection & Integrated AI Remedy
+For infected leaves, the app detects the disease and triggers an interactive, expert-backed LLaMA-3.3 remedy plan detailing immediate treatments, PPE, 7-10 day monitoring, and irrigation:
+![Apple Rust Disease & Remedy](assets/working_remedy_apple.png)
+
+### 3. Corn Leaf Blight Disease Detection & Integrated AI Remedy
+AgriScan demonstrates robust performance across different crop categories, outputting precise disease identification and structured action plans:
+![Corn Leaf Blight Disease & Remedy](assets/working_remedy_corn.png)
 
 ---
 
@@ -40,11 +57,16 @@ It combines **YOLOv8 (Ultralytics)** for image classification and **LangChain + 
 
 AgriScan/
 ├── app1.py                     # Streamlit app (main UI)
+├── app.py                      # Backup/alternative entry point
 ├── requirements.txt            # Python dependencies
 ├── runtime.txt                 # Fixes Python version (3.12)
 ├── packages.txt                # Adds required system libraries for OpenCV
 ├── class_names.json            # Label mapping for trained classes
 ├── .gitignore                  # Excludes data and large files
+├── assets/                     # Demo screenshots showing application working
+│   ├── working_healthy.png
+│   ├── working_remedy_apple.png
+│   └── working_remedy_corn.png
 └── runs/
 └── classify/
 ├── train/weights/best.pt      # Ensemble model 1

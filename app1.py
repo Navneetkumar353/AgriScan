@@ -1,6 +1,7 @@
 # app.py — YOLOv8 classification + TTA + optional ensemble + ChatGroq remedy
 import os, json, numpy as np
 import streamlit as st
+# pyrefly: ignore [missing-import]
 from ultralytics import YOLO
 from PIL import Image, ImageOps
 from langchain_groq import ChatGroq
