@@ -154,7 +154,7 @@ with right:
                         st.info("Set GROQ_API_KEY in .env (local) or in Streamlit Cloud → Settings → Secrets.")
                     else:
                         llm = ChatGroq(temperature=0.3, groq_api_key=GROQ_API_KEY,
-                                    model_name="llama-3.3-70b-versatile")
+                                    model_name="openai/gpt-oss-120b")
                         prompt = (
                             f"The detected plant class is '{pred_name}'. "
                             f"Give a short action plan:\n"
